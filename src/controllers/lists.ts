@@ -10,6 +10,12 @@ const getMany = async (req: Request, res: Response) => {
 const createList = async (req: Request, res: Response) => {
   const { title } = req.body;
 
+  if (!title) {
+    res.sendStatus(404);
+
+    return;
+  }
+
   const createList = await listsServices.postList({ title });
 
   res.send(createList);
@@ -34,6 +40,12 @@ const deleteList = async (req: Request, res: Response) => {
 const updateList = async (req: Request, res: Response) => {
   const { listId } = req.params;
   const { title } = req.body;
+
+  if (!title) {
+    res.sendStatus(404);
+
+    return;
+  }
 
   const isListExists = listsServices.getListById(+listId);
   

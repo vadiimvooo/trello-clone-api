@@ -10,6 +10,12 @@ const getMany = async (req: Request, res: Response) => {
 const createTask = async (req: Request, res: Response) => {
   const { title, listId } = req.body;
 
+  if (!title || !listId) {
+    res.sendStatus(404);
+
+    return;
+  }
+
   const createList = await tasksServices.postTask({ title, listId });
 
   res.send(createList);
@@ -34,6 +40,12 @@ const deleteTask = async (req: Request, res: Response) => {
 const updateTask = async (req: Request, res: Response) => {
   const { taskId } = req.params;
   const { title, listId } = req.body;
+
+  if (!title) {
+    res.sendStatus(404);
+
+    return;
+  }
 
   const isListExists = tasksServices.getTaskById(+taskId);
   
