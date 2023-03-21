@@ -1,0 +1,266 @@
+[
+  {
+    "id": "apple-ipad-64gb-pink",
+    "namespaceId": "apple-ipad",
+    "name": "Apple iPad 10.9' 64GB Pink",
+    "capacityAvailable": ["64GB", "128GB", "256GB"],
+    "capacity": "64GB",
+    "priceRegular": 1200,
+    "priceDiscount": 1200,
+    "colorsAvailable": ["spacegrey", "silver", "yellow", "pink"],
+    "color": "pink",
+    "images": [
+      "https://i.imgur.com/5eiGEAJ.png",
+      "https://i.imgur.com/aJ5e8mm.png",
+      "https://i.imgur.com/yTpQiMt.png"
+    ],
+    "description": [
+      {
+        "title": "iPad Pro",
+        "text": [
+          "With the superpower of the Apple M1 chip.",
+          "This is the highest level of iPad. Incredible M1 chip performance, gorgeous XDR display and fast wireless. Full speed ahead."
+        ]
+      },
+      {
+        "title": "Camera",
+        "text": [
+          "Cameras - wide and ultra-wide angle - take great photos or videos. They can easily be used in multi-camera camera rigs. And thanks to an even more powerful signal processor in the M1 chip, iPad Pro now supports Smart HDR 3."
+        ]
+      },
+      {
+        "title": "Higher processing speed and graphics",
+        "text": [
+          "With an 8-core CPU in the M1 chip, performance is increased by up to 50%. And the 8-core GPU boosts graphics speed by up to 40%. That means you can create complex augmented reality models on iPad Pro, play games with console-grade graphics and high frame rates, and more."
+        ]
+      }
+    ],
+    "screen": "10.9' XDR",
+    "resolution": "2360х1640",
+    "processor": "Apple A14 Bionic",
+    "ram": "8GB",
+    "camera": "12 Mp + 12MP",
+    "zoom": "Digital, 5x",
+    "cell": ["NONE"]
+  },
+  {
+    "id": "apple-ipad-64gb-silver",
+    "namespaceId": "apple-ipad",
+    "name": "Apple iPad 10.9' 64GB Silver",
+    "capacityAvailable": ["64GB", "128GB", "256GB"],
+    "capacity": "64GB",
+    "priceRegular": 1200,
+    "priceDiscount": 1200,
+    "colorsAvailable": ["spacegrey", "silver", "yellow", "pink"],
+    "color": "silver",
+    "images": [
+      "https://i.imgur.com/uu6qswC.png",
+      "https://i.imgur.com/uKK3i15.png",
+      "https://i.imgur.com/6LUrP8q.png"
+    ],
+    "description": [
+      {
+        "title": "iPad Pro",
+        "text": [
+          "With the superpower of the Apple M1 chip.",
+          "This is the highest level of iPad. Incredible M1 chip performance, gorgeous XDR display and fast wireless. Full speed ahead."
+        ]
+      },
+      {
+        "title": "Camera",
+        "text": [
+          "Cameras - wide and ultra-wide angle - take great photos or videos. They can easily be used in multi-camera camera rigs. And thanks to an even more powerful signal processor in the M1 chip, iPad Pro now supports Smart HDR 3."
+        ]
+      },
+      {
+        "title": "Higher processing speed and graphics",
+        "text": [
+          "With an 8-core CPU in the M1 chip, performance is increased by up to 50%. And the 8-core GPU boosts graphics speed by up to 40%. That means you can create complex augmented reality models on iPad Pro, play games with console-grade graphics and high frame rates, and more."
+        ]
+      }
+    ],
+    "screen": "10.9' XDR",
+    "resolution": "2360х1640",
+    "processor": "Apple A14 Bionic",
+    "ram": "8GB",
+    "camera": "12 Mp + 12MP",
+    "zoom": "Digital, 5x",
+    "cell": ["NONE"]
+  },
+  {
+    "id": "apple-ipad-64gb-spacegrey",
+    "namespaceId": "apple-ipad",
+    "name": "Apple iPad 10.9' 64GB Space Grey",
+    "capacityAvailable": ["64GB", "128GB", "256GB"],
+    "capacity": "64GB",
+    "priceRegular": 1200,
+    "priceDiscount": 1200,
+    "colorsAvailable": ["spacegrey", "silver", "yellow", "pink"],
+    "color": "spacegray",
+    "images": [
+      "https://i.imgur.com/1WrIWSD.png",
+      "https://i.imgur.com/pXR9Rll.png",
+      "https://i.imgur.com/awGx6QI.png"
+    ],
+    "description": [
+      {
+        "title": "iPad Pro",
+        "text": [
+          "With the superpower of the Apple M1 chip.",
+          "This is the highest level of iPad. Incredible M1 chip performance, gorgeous XDR display and fast wireless. Full speed ahead."
+        ]
+      },
+      {
+        "title": "Camera",
+        "text": [
+          "Cameras - wide and ultra-wide angle - take great photos or videos. They can easily be used in multi-camera camera rigs. And thanks to an even more powerful signal processor in the M1 chip, iPad Pro now supports Smart HDR 3."
+        ]
+      },
+      {
+        "title": "Higher processing speed and graphics",
+        "text": [
+          "With an 8-core CPU in the M1 chip, performance is increased by up to 50%. And the 8-core GPU boosts graphics speed by up to 40%. That means you can create complex augmented reality models on iPad Pro, play games with console-grade graphics and high frame rates, and more."
+        ]
+      }
+    ],
+    "screen": "10.9' XDR",
+    "resolution": "2360х1640",
+    "processor": "Apple A14 Bionic",
+    "ram": "8GB",
+    "camera": "12 Mp + 12MP",
+    "zoom": "Digital, 5x",
+    "cell": ["NONE"]
+  },
+  {
+    "id": "apple-ipad-64gb-yellow",
+    "namespaceId": "apple-ipad",
+    "name": "Apple iPad 10.9' 64GB Yellow",
+    "capacityAvailable": ["64GB", "128GB", "256GB"],
+    "capacity": "64GB",
+    "priceRegular": 1200,
+    "priceDiscount": 1200,
+    "colorsAvailable": ["spacegrey", "silver", "yellow", "pink"],
+    "color": "yellow",
+    "images": [
+      "https://i.imgur.com/i6wHnML.png",
+      "https://i.imgur.com/wLx0l6h.png",
+      "https://i.imgur.com/6LUrP8q.png"
+    ],
+    "description": [
+      {
+        "title": "iPad Pro",
+        "text": [
+          "With the superpower of the Apple M1 chip.",
+          "This is the highest level of iPad. Incredible M1 chip performance, gorgeous XDR display and fast wireless. Full speed ahead."
+        ]
+      },
+      {
+        "title": "Camera",
+        "text": [
+          "Cameras - wide and ultra-wide angle - take great photos or videos. They can easily be used in multi-camera camera rigs. And thanks to an even more powerful signal processor in the M1 chip, iPad Pro now supports Smart HDR 3."
+        ]
+      },
+      {
+        "title": "Higher processing speed and graphics",
+        "text": [
+          "With an 8-core CPU in the M1 chip, performance is increased by up to 50%. And the 8-core GPU boosts graphics speed by up to 40%. That means you can create complex augmented reality models on iPad Pro, play games with console-grade graphics and high frame rates, and more."
+        ]
+      }
+    ],
+    "screen": "10.9' XDR",
+    "resolution": "2360х1640",
+    "processor": "Apple A14 Bionic",
+    "ram": "8GB",
+    "camera": "12 Mp + 12MP",
+    "zoom": "Digital, 5x",
+    "cell": ["NONE"]
+  },
+  {
+    "id": "apple-ipad-pro-512gb-silver",
+    "namespaceId": "apple-ipad-pro",
+    "name": "Apple iPad Pro 12.9' 512GB Silver",
+    "capacityAvailable": ["128GB", "256GB", "512GB"],
+    "capacity": "512GB",
+    "priceRegular": 2400,
+    "priceDiscount": 2400,
+    "colorsAvailable": ["spacegrey", "silver"],
+    "color": "silver",
+    "images": [
+      "https://i.imgur.com/Nrt8Cup.png",
+      "https://i.imgur.com/UjIQW8c.png",
+      "https://i.imgur.com/MoSvkeO.png"
+    ],
+    "description": [
+      {
+        "title": "iPad Pro",
+        "text": [
+          "With the superpower of the Apple M1 chip.",
+          "This is the highest level of iPad. Incredible M1 chip performance, gorgeous XDR display and fast wireless. Full speed ahead."
+        ]
+      },
+      {
+        "title": "Camera",
+        "text": [
+          "Cameras - wide and ultra-wide angle - take great photos or videos. They can easily be used in multi-camera camera rigs. And thanks to an even more powerful signal processor in the M1 chip, iPad Pro now supports Smart HDR 3."
+        ]
+      },
+      {
+        "title": "Higher processing speed and graphics",
+        "text": [
+          "With an 8-core CPU in the M1 chip, performance is increased by up to 50%. And the 8-core GPU boosts graphics speed by up to 40%. That means you can create complex augmented reality models on iPad Pro, play games with console-grade graphics and high frame rates, and more."
+        ]
+      }
+    ],
+    "screen": "12.9' XDR",
+    "resolution": "2732x2048",
+    "processor": "Apple M1",
+    "ram": "8GB",
+    "camera": "12 Mp + 10 Mp + 12MP",
+    "zoom": "Digital, 5x",
+    "cell": ["NONE"]
+  },
+  {
+    "id": "apple-ipad-pro-512gb-spacegrey",
+    "namespaceId": "apple-ipad-pro",
+    "name": "Apple iPad Pro 12.9' 512GB Space Grey",
+    "capacityAvailable": ["128GB", "256GB", "512GB"],
+    "capacity": "512GB",
+    "priceRegular": 2400,
+    "priceDiscount": 2400,
+    "colorsAvailable": ["spacegrey", "silver"],
+    "color": "spacegrey",
+    "images": [
+      "https://i.imgur.com/jvRxTfP.png",
+      "https://i.imgur.com/H9idpIA.png",
+      "https://i.imgur.com/e4REPzv.png"
+    ],
+    "description": [
+      {
+        "title": "iPad Pro",
+        "text": [
+          "With the superpower of the Apple M1 chip.",
+          "This is the highest level of iPad. Incredible M1 chip performance, gorgeous XDR display and fast wireless. Full speed ahead."
+        ]
+      },
+      {
+        "title": "Camera",
+        "text": [
+          "Cameras - wide and ultra-wide angle - take great photos or videos. They can easily be used in multi-camera camera rigs. And thanks to an even more powerful signal processor in the M1 chip, iPad Pro now supports Smart HDR 3."
+        ]
+      },
+      {
+        "title": "Higher processing speed and graphics",
+        "text": [
+          "With an 8-core CPU in the M1 chip, performance is increased by up to 50%. And the 8-core GPU boosts graphics speed by up to 40%. That means you can create complex augmented reality models on iPad Pro, play games with console-grade graphics and high frame rates, and more."
+        ]
+      }
+    ],
+    "screen": "12.9' XDR",
+    "resolution": "2732x2048",
+    "processor": "Apple M1",
+    "ram": "8GB",
+    "camera": "12 Mp + 10 Mp + 12MP",
+    "zoom": "Digital, 5x",
+    "cell": ["NONE"]
+  }
+]

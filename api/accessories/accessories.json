@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "category": "accessories",
+    "phoneId": "apple-watch-se-32gb-starlight",
+    "itemId": "apple-watch-se-32gb-starlight",
+    "name": "Apple Watch SE 40mm 32GB Starlight",
+    "fullPrice": 800,
+    "price": 780,
+    "screen": "40mm LTPO",
+    "capacity": "32GB",
+    "color": "starlight",
+    "ram": "1GB",
+    "year": 2022,
+    "image": "https://i.imgur.com/tBEI953.png"
+  },
+  {
+    "id": 2,
+    "category": "accessories",
+    "phoneId": "apple-watch-se-32gb-midnight",
+    "itemId": "apple-watch-se-32gb-midnight",
+    "name": "Apple Watch SE 40mm 32GB Midnight",
+    "fullPrice": 800,
+    "price": 780,
+    "screen": "40mm LTPO",
+    "capacity": "32GB",
+    "color": "midnight",
+    "ram": "1GB",
+    "year": 2022,
+    "image": "https://i.imgur.com/18GCqAo.png"
+  },
+  {
+    "id": 3,
+    "category": "accessories",
+    "phoneId": "apple-watch-se-32gb-white",
+    "itemId": "apple-watch-se-32gb-white",
+    "name": "Apple Watch SE 40mm 32GB White",
+    "fullPrice": 800,
+    "price": 780,
+    "screen": "40mm LTPO",
+    "capacity": "32GB",
+    "color": "white",
+    "ram": "1GB",
+    "year": 2022,
+    "image": "https://i.imgur.com/Jiu05ua.png"
+  }
+]
