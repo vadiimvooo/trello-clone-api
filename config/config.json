@@ -1,23 +1,32 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgresql",
-    "database": "postgres",
-    "host": "127.0.0.1",
-    "dialect": "postgresql"
+    "username": "vadiimvooo",
+    "password": "r5weTSjvPWY0",
+    "database": "Trello-clone",
+    "host": "ep-black-wind-684985.eu-central-1.aws.neon.tech",
+    "dialect": "postgresql",
+    "dialectOptions": {
+      "ssl": true
+    }
   },
   "test": {
-    "username": "postgres",
-    "password": "postgresql",
-    "database": "postgres",
-    "host": "127.0.0.1",
-    "dialect": "postgresql"
+    "username": "vadiimvooo",
+    "password": "r5weTSjvPWY0",
+    "database": "Trello-clone",
+    "host": "ep-black-wind-684985.eu-central-1.aws.neon.tech",
+    "dialect": "postgresql",
+    "dialectOptions": {
+      "ssl": true
+    }
   },
   "production": {
-    "username": "postgres",
-    "password": "postgresql",
-    "database": "postgres",
-    "host": "127.0.0.1",
-    "dialect": "postgresql"
+    "username": "vadiimvooo",
+    "password": "r5weTSjvPWY0",
+    "database": "Trello-clone",
+    "host": "ep-black-wind-684985.eu-central-1.aws.neon.tech",
+    "dialect": "postgresql",
+    "dialectOptions": {
+      "ssl": true
+    }
   }
 }
