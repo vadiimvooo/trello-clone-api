@@ -13,6 +13,7 @@ function normalize(task: TasksAttributes) {
 async function getAllTasks() {
   const loadedData: TasksAttributes[] = await Task.findAll({
     raw: true,
+    order: ['order'],
   });
 
   return loadedData.map(normalize);

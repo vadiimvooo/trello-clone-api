@@ -79,6 +79,7 @@ module.exports = {
     });
   },
   down: async (queryInterface) => {
+    await queryInterface.dropTable('Tasks');
     await queryInterface.dropTable('Lists');
   },
 };
