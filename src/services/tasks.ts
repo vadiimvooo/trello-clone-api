@@ -81,6 +81,7 @@ async function changeTaskOrder(taskId: number, newPosition: number, newListId: n
                 [Op.lte]: newPosition,
               },
               listId: currentListId,
+              id: { [Op.ne]: taskId } // Exclude the current task from the update
             },
             transaction,
           }
@@ -95,52 +96,54 @@ async function changeTaskOrder(taskId: number, newPosition: number, newListId: n
                 [Op.lt]: currentOrder,
               },
               listId: currentListId,
+              id: { [Op.ne]: taskId } // Exclude the current task from the update
             },
             transaction,
           }
         );
       }
     } else {
-      // Shift all the tasks with order greater than the current order by 1 in the current list
+      // Shift all the tasks after the new position by 1
       await Task.update(
-        { order: sequelize.literal('"order" - 1') },
+        { order: sequelize.literal('"order" + 1') },
         {
           where: {
-            order: {
-              [Op.gt]: currentOrder,
-            },
-            listId: currentListId,
+            order: { [Op.gte]: newPosition },
+            listId: newListId,
           },
           transaction,
         }
       );
 
-      // Shift all the tasks with order greater than or equal to the new position by 1 in the new list
+      // Shift all the tasks after the old position by -1
       await Task.update(
-        { order: sequelize.literal('"order" + 1') },
+        { order: sequelize.literal('"order" - 1') },
         {
           where: {
-            order: {
-              [Op.gte]: newPosition,
-            },
-            listId: newListId,
+            order: { [Op.gt]: currentOrder },
+            listId: currentListId,
           },
           transaction,
         }
       );
     }
 
-    // Update the position and list of the task
-    await task.update({ order: newPosition, listId: newListId }, { transaction });
+    // Update the task's position and listId
+    await Task.update(
+      { order: newPosition, listId: newListId },
+      {
+        where: { id: taskId },
+        transaction,
+      }
+    );
 
     await transaction.commit();
-
-    return true;
-  } catch (err) {
+  } catch (error) {
     await transaction.rollback();
-    throw err;
+    throw error;
   }
 }
+
 
 
 export const tasksServices = {
