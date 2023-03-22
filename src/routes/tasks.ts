@@ -7,3 +7,4 @@ router.get('/', tasksControllers.getMany);
 router.post('/', tasksControllers.createTask);
 router.delete('/:taskId', tasksControllers.deleteTask);
 router.patch('/:taskId', tasksControllers.updateTask);
+router.put('/order', tasksControllers.updateTaskOrder);

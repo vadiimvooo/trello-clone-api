@@ -60,9 +60,22 @@ const updateTask = async (req: Request, res: Response) => {
   res.send(updatedData);
 };
 
+async function updateTaskOrder(req: Request, res: Response): Promise<void> {
+  const { taskId, newPosition, newListId } = req.body;
+
+  try {
+    const success = await tasksServices.changeTaskOrder(taskId, newPosition, newListId);
+
+    res.status(200).json({ success });
+  } catch {
+    res.sendStatus(500);
+  }
+}
+
 export const tasksControllers = {
   getMany,
   createTask,
   deleteTask,
   updateTask,
+  updateTaskOrder,
 };
