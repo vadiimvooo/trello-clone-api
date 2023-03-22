@@ -33,6 +33,8 @@ const deleteList = async (req: Request, res: Response) => {
   }
 
   await listsServices.deleteList(+listId);
+
+  res.sendStatus(204);
 };
 
 const updateList = async (req: Request, res: Response) => {
