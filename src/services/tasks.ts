@@ -134,6 +134,7 @@ async function changeTaskOrder(taskId: number, newPosition: number, newListId: n
       {
         where: { id: taskId },
         transaction,
+        silent: true, // Update without triggering beforeUpdate hook
       }
     );
 
@@ -143,6 +144,7 @@ async function changeTaskOrder(taskId: number, newPosition: number, newListId: n
     throw error;
   }
 }
+
 
 
 
