@@ -73,7 +73,7 @@ async function changeTaskOrder(taskId: number, newPosition: number, newListId: n
       // Shift all the tasks between the old and the new position by 1
       if (currentOrder < newPosition) {
         await Task.update(
-          { order: sequelize.literal('"order" - 1') },
+          { order: sequelize.literal('"order" - 1'), updatedAt: new Date() },
           {
             where: {
               order: {
@@ -84,11 +84,12 @@ async function changeTaskOrder(taskId: number, newPosition: number, newListId: n
               id: { [Op.ne]: taskId } // Exclude the current task from the update
             },
             transaction,
+            silent: true // Only update the specified fields
           }
         );
       } else {
         await Task.update(
-          { order: sequelize.literal('"order" + 1') },
+          { order: sequelize.literal('"order" + 1'), updatedAt: new Date() },
           {
             where: {
               order: {
@@ -99,42 +100,45 @@ async function changeTaskOrder(taskId: number, newPosition: number, newListId: n
               id: { [Op.ne]: taskId } // Exclude the current task from the update
             },
             transaction,
+            silent: true // Only update the specified fields
           }
         );
       }
     } else {
       // Shift all the tasks after the new position by 1
       await Task.update(
-        { order: sequelize.literal('"order" + 1') },
+        { order: sequelize.literal('"order" + 1'), updatedAt: new Date() },
         {
           where: {
             order: { [Op.gte]: newPosition },
             listId: newListId,
           },
           transaction,
+          silent: true // Only update the specified fields
         }
       );
 
       // Shift all the tasks after the old position by -1
       await Task.update(
-        { order: sequelize.literal('"order" - 1') },
+        { order: sequelize.literal('"order" - 1'), updatedAt: new Date() },
         {
           where: {
             order: { [Op.gt]: currentOrder },
             listId: currentListId,
           },
           transaction,
+          silent: true // Only update the specified fields
         }
       );
     }
 
     // Update the task's position and listId
     await Task.update(
-      { order: newPosition, listId: newListId },
+      { order: newPosition, listId: newListId, updatedAt: new Date() },
       {
         where: { id: taskId },
         transaction,
-        silent: true, // Update without triggering beforeUpdate hook
+        silent: true // Only update the specified fields
       }
     );
 
@@ -144,9 +148,6 @@ async function changeTaskOrder(taskId: number, newPosition: number, newListId: n
     throw error;
   }
 }
-
-
-
 
 export const tasksServices = {
   normalize,
