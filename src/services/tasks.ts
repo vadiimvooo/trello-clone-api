@@ -16,7 +16,7 @@ async function getAllTasks() {
     order: ['order'],
   });
 
-  return loadedData.map(normalize);
+  return loadedData;
 }
 
 async function postTask(list: Pick<TasksAttributes, 'title' | 'listId'>) {
