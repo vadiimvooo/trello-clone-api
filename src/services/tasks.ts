@@ -26,7 +26,7 @@ async function postTask(list: Pick<TasksAttributes, 'title' | 'listId'>) {
   });
   const plainTask = addTask.get({ plain: true });
 
-  return normalize(plainTask);
+  return plainTask;
 }
 
 async function deleteTask(taskId: number) {
